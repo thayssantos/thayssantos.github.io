@@ -15,6 +15,7 @@ on:
 
 # Permissions
 permissions:
+  contents: read
   pages: write
   id-token: write
   
@@ -35,7 +36,11 @@ jobs:
           node-version: '18'
       - run: npm install
       - run: npm run build
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./public
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/upload-pages@v4
 
