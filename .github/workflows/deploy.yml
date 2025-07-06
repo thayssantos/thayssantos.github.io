@@ -37,7 +37,5 @@ jobs:
       - run: npm run build
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v3
-        with:
-          artifact_name: github-pages
-          path: dist
+        uses: actions/deploy-pages@v4
+
