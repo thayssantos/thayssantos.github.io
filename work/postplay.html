@@ -2,7 +2,7 @@
 <html lang="en-US">
 
 <head>
-    <title>Player Redesign</title>
+    <title>Post-Watch Engagement</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
 
@@ -13,13 +13,14 @@
 
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/style-blue.css">
 </head>
 
 <body>
     <header>
         <div class="container">
             <nav>
-                <a class="text-highlight" href="#">
+                <a class="text-highlight" href="/">
                     <img alt="Thays Santos" src="/images/logo.svg"/>
                 </a>
                 <div class="links">
@@ -36,7 +37,7 @@
         <div class="block-gray">
             <div class="container">
                 <section>
-                    <div class="row row-gap pt-4 align-center">
+                    <div class="row row-gap pt-4 justify-center">
                         <div class="col col-2 gap-3">
                             <div class="row gap-1 align-center">
                                 <div class="icon-tiny">
@@ -47,20 +48,20 @@
                                         <path d="M3 10h18"></path>
                                     </svg>
                                 </div>
-                                <p>Feb 2024 - Present</p>
+                                <p>Jan 2025 - 2 months - Design and Development</p>
                             </div>
-                            <h1>Player Redesign</h1>
-                            <p>Redesigning video player experience for consistency across all platforms</p>
+                            <h1>Post-Watch Engagement</h1>
+                            <p>Increasing content discovery and user engagement after viewing</p>
                             <div>
                                 <div class="row gap-1">
-                                    <div class="technology">UX Research</div>
-                                    <div class="technology">Product Design</div>
+                                    <div class="technology">Mobile</div>
                                     <div class="technology">Multi-platform</div>
+                                    <div class="technology">A/B Testing</div>
                                 </div>
                             </div>
                         </div>
                         <div class="col col-2">
-                            <img class="rounded" src="/images/cover-player-redesign.jpg" />
+                            <img class="rounded" src="/images/cover-postplay.jpg" />
                         </div>
                     </div>
                 </section>
@@ -70,7 +71,7 @@
             <div class="container">
                 <section>
                     <h2>Business Context</h2>
-                    <p class="mb-8">The player experience was fragmented across multiple platforms, leading to inconsistent usability and brand perception. While alignment had been discussed for several months, a new feature request created the strategic opportunity to initiate a full redesign and establish consistency.</p>
+                    <p class="mb-8">Low engagement rates post-content consumption were affecting content discovery and user retention. Users were adding content to favorites but rarely returning to watch, indicating poor content discovery flow. This directly impacted user lifetime value and content library utilization.</p>
                     <div class="row row-gap">
                         <div class="col col-2">
                             <div class="card">
@@ -85,7 +86,7 @@
                                     </div>
                                     <h3 class="mb-0">My Role</h3>
                                 </div>
-                                <p>Lead Product Designer</p>
+                                <p>Product Designer</p>
                             </div>
                         </div>
                         <div class="col col-2">
@@ -115,21 +116,6 @@
                                         </svg>
                                         Android
                                     </div>
-                                    <div class="platform">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                            <circle cx="12" cy="12" r="10"></circle>
-                                            <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
-                                            <path d="M2 12h20"></path>
-                                        </svg>
-                                        Web
-                                    </div>
-                                    <div class="platform">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                            <rect width="20" height="15" x="2" y="7" rx="2" ry="2"></rect>
-                                            <polyline points="17 2 12 7 7 2"></polyline>
-                                        </svg>
-                                        TV
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -144,7 +130,7 @@
                                     </div>
                                     <h3 class="mb-0">Impact</h3>
                                 </div>
-                                <p>6M+ users across Nordic markets</p>
+                                <p>+7% more plays in within a week than the original version</p>
                             </div>
                         </div>
                         <div class="col col-2">
@@ -161,7 +147,7 @@
                                     </div>
                                     <h3 class="mb-0">Team</h3>
                                 </div>
-                                <p>2 Designers, 1 Researcher, 7 Devs, 1 QA, 1 PM</p>
+                                <p>1 Designer, 2 Mobile Devs, 3 Backend devs, 1 PM</p>
                             </div>
                         </div>
                     </div>
@@ -173,19 +159,17 @@
                 <section>
                     <div class="row justify-center mb-8 rounded">
                         <video loop autoplay controls>
-                            <source src="/videos/player-redesign.mp4" type="video/mp4" />
+                            <source src="/videos/postplay.mp4" type="video/mp4" />
                         </video>
                     </div>
                     <h2>The Problem</h2>
-                    <p class="mb-8">Fragmented player design across platforms created user confusion with live vs replay functionality, inconsistent time displays, and varying scrubbing behaviors. Users struggled with navigation during live sports events, impacting viewing time and satisfaction.</p>
+                    <p class="mb-8">Users hesitant to commit to new content after finishing viewing. Analytics showed 'Add to My List' feature was used frequently but saved content was rarely watched later. Based on previous quantitative and qualitative data the team had an assumption that adding metadata and more information about the shows would increase the interest from users.</p>
                     <div class="card">
-                        <h3>Key Pain Points</h3>
+                        <h3>Quantitative and Qualitative Data Insights</h3>
                         <ul>
-                            <li>Inconsistent control placement across iOS, Android, Web, and TV</li>
-                            <li>Confusing live vs replay indicators</li>
-                            <li>Varying scrubbing behaviors causing user frustration</li>
-                            <li>Poor accessibility compliance</li>
-                            <li>Weak brand presence in player interface</li>
+                            <li>High drop-off rates after content completion</li>
+                            <li>Poor content discovery flow</li>
+                            <li>Other blocks with metadata had higher plays rates than the ones without</li>
                         </ul>
                     </div>
                 </section>
@@ -205,7 +189,7 @@
                                             <path d="m9 11 3 3L22 4"></path>
                                         </svg>
                                     </div>
-                                    <p>Led end-to-end design from user research to developer handoff.</p>
+                                    <p>Analysed user behaviour data with data analyst to identify engagement gaps.</p>
                                 </div>
                             </div>
                         </div>
@@ -218,7 +202,7 @@
                                             <path d="m9 11 3 3L22 4"></path>
                                         </svg>
                                     </div>
-                                    <p>Facilitated cross-functional workshops with design, development, and QA teams.</p>
+                                    <p>Designed improved post-watch experience focusing on content discovery.</p>
                                 </div>
                             </div>
                         </div>
@@ -231,7 +215,7 @@
                                             <path d="m9 11 3 3L22 4"></path>
                                         </svg>
                                     </div>
-                                    <p>Conducted user interviews and usability testing across all platforms.</p>
+                                    <p>Developed device-specific solutions for mobile and tablet experiences.</p>
                                 </div>
                             </div>
                         </div>
@@ -244,7 +228,7 @@
                                             <path d="m9 11 3 3L22 4"></path>
                                         </svg>
                                     </div>
-                                    <p>Created unified design system components and interaction patterns.</p>
+                                    <p>Created accessibility-focused interaction patterns.</p>
                                 </div>
                             </div>
                         </div>
@@ -257,7 +241,7 @@
                                             <path d="m9 11 3 3L22 4"></path>
                                         </svg>
                                     </div>
-                                    <p>Collaborated with engineering teams to ensure feasible implementation.</p>
+                                    <p>Collaborated with developers on technical feasibility and implementation.</p>
                                 </div>
                             </div>
                         </div>
@@ -274,8 +258,8 @@
                             <div class="row gap-2 nowrap align-center">
                                 <div class="number-round">1</div>
                                 <div class="col">
-                                    <b>Discovery</b>
-                                    <p>10 user interviews in 2 rounds (initial audit + concept validation)</p>
+                                    <b>Data Analysis</b>
+                                    <p>Reviewed user engagement metrics and behavioural patterns with data analyst and desk research.</p>
                                 </div>
                             </div>
                         </div>
@@ -283,8 +267,8 @@
                             <div class="row gap-2 nowrap align-center">
                                 <div class="number-round">2</div>
                                 <div class="col">
-                                    <b>Analysis</b>
-                                    <p>Competitive research and platform-specific constraint mapping.</p>
+                                    <b>Problem Definition</b>
+                                    <p>Identified specific friction points in content discovery and engagement flow.</p>
                                 </div>
                             </div>
                         </div>
@@ -302,7 +286,7 @@
                                 <div class="number-round">4</div>
                                 <div class="col">
                                     <b>Design</b>
-                                    <p>Wireframes, prototypes, and design system updates.</p>
+                                    <p>Created improved post-watch interfaces with better context and recommendations.</p>
                                 </div>
                             </div>
                         </div>
@@ -310,8 +294,8 @@
                             <div class="row gap-2 nowrap align-center">
                                 <div class="number-round">5</div>
                                 <div class="col">
-                                    <b>Validation</b>
-                                    <p>A/B testing and usability sessions across all platforms.</p>
+                                    <b>Accessibility Focus</b>
+                                    <p>Designed inclusive interactions with text + icon combinations meeting WCAG standards.</p>
                                 </div>
                             </div>
                         </div>
@@ -319,8 +303,17 @@
                             <div class="row gap-2 nowrap align-center">
                                 <div class="number-round">6</div>
                                 <div class="col">
-                                    <b>Implementation</b>
-                                    <p>Developer handoff with detailed specifications and design tokens.</p>
+                                    <b>Design System Updates</b>
+                                    <p>New buttons style were necessary for the design so I documented our Design System for both Android and iOS.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="row gap-2 nowrap align-center">
+                                <div class="number-round">7</div>
+                                <div class="col">
+                                    <b>Device Optimisation</b>
+                                    <p>Tailored experiences for mobile vs tablet form factors and usage patterns.</p>
                                 </div>
                             </div>
                         </div>
@@ -343,7 +336,7 @@
                                             <path d="M10 22h4"></path>
                                         </svg>
                                     </div>
-                                    <p>Unified control placement across all platforms while respecting platform conventions.</p>
+                                    <p>Enhanced content preview with richer context and synopses on tablets.</p>
                                 </div>
                             </div>
                         </div>
@@ -357,7 +350,7 @@
                                             <path d="M10 22h4"></path>
                                         </svg>
                                     </div>
-                                    <p>Improved live event indicators with clear visual hierarchy.</p>
+                                    <p>Improved accessibility with combined text and icon button designs.</p>
                                 </div>
                             </div>
                         </div>
@@ -371,7 +364,7 @@
                                             <path d="M10 22h4"></path>
                                         </svg>
                                     </div>
-                                    <p>Streamlined scrubbing interactions for better accessibility.</p>
+                                    <p>Streamlined save-for-later flow with better visual feedback.</p>
                                 </div>
                             </div>
                         </div>
@@ -385,7 +378,7 @@
                                             <path d="M10 22h4"></path>
                                         </svg>
                                     </div>
-                                    <p>Enhanced brand presence through consistent visual treatment.</p>
+                                    <p>Personalised content recommendations based on viewing history.</p>
                                 </div>
                             </div>
                         </div>
@@ -393,66 +386,53 @@
                 </section>
             </div>
         </div>
-        <!--div class="block-gray">
+        <div class="block-gray">
             <div class="container">
                 <section>
                     <h2 class="mb-8">Measurable Results</h2>
                     <div class="row row-gap">
-                        <div class="col col-3">
+                        <div class="col col-2">
                             <div class="card text-center">
-                                <h3 class="color-primary">100%</h3>
-                                <p>Design consistency across 4 platforms</p>
+                                <h3 class="color-primary">+19%</h3>
+                                <p>Higher engagement with the block</p>
                             </div>
                         </div>
-                        <div class="col col-3">
+                        <div class="col col-2">
                             <div class="card text-center">
-                                <h3 class="color-primary">23%</h3>
-                                <p>Improvement in live-event user satisfaction</p>
+                                <h3 class="color-primary">+7%</h3>
+                                <p>More plays in within a week than the original version</p>
                             </div>
                         </div>
-                        <div class="col col-3">
+                        <div class="col col-2">
                             <div class="card text-center">
-                                <h3 class="color-primary">35%</h3>
-                                <p>Reduction in support tickets</p>
+                                <h3 class="color-primary">+42%</h3>
+                                <p>Unique content exposure</p>
                             </div>
                         </div>
-                        <div class="col col-3">
+                        <div class="col col-2">
                             <div class="card text-center">
                                 <h3 class="color-primary">WCAG 2.1 AA</h3>
                                 <p>Accessibility compliance achieved</p>
                             </div>
                         </div>
-                        <div class="col col-3">
-                            <div class="card text-center">
-                                <h3 class="color-primary">6M+</h3>
-                                <p>Users impacted</p>
-                            </div>
-                        </div>
-                        <div class="col col-3">
-                            <div class="card text-center">
-                                <h3 class="color-primary">4</h3>
-                                <p>Platforms unified</p>
-                            </div>
-                        </div>
                     </div>
                 </section>
             </div>
-        </div-->
+        </div>
         <div class="block-light">
             <div class="container">
                 <section>
                     <h2 class="text-center mb-8">Skills Demonstrated</h2>
                     <div class="card mb-8">
                         <div class="row gap-1">
-                            <div class="technology">User Research</div>
                             <div class="technology">Cross-platform Design</div>
                             <div class="technology">Design Systems</div>
+                            <div class="technology">A/B Testing</div>
                             <div class="technology">Accessibility</div>
                             <div class="technology">Stakeholder Management</div>
-                            <div class="technology">Workshop Facilitation</div>
                             <div class="technology">Developer Collaboration</div>
-                            <div class="technology">Usability Testing</div>
                             <div class="technology">Prototyping</div>
+                            <div class="technology">Desk Research</div>
                         </div>
                     </div>
                     <div class="row justify-center">
