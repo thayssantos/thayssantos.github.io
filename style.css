@@ -123,6 +123,7 @@ ul li::marker {
     color: var(--color-primary);
 }
 
+/* Formatting */
 .button {
     padding: 0.5rem 1rem;
     color: var(--color-white);
@@ -139,7 +140,6 @@ ul li::marker {
     border: 1px solid var(--color-primary);
 }
 
-/* Formatting */
 .container {
     max-width: 70rem;
     margin: 0 auto;
@@ -167,12 +167,10 @@ ul li::marker {
 
 .row-gap {
     margin: -0.75rem;
-    /* margin-right: -0.5rem */
 }
 
 .row-gap>.col {
     padding: 0.75rem;
-    /* padding-right: 0.5rem; */
 }
 
 .row-gap>.col>div {
@@ -194,7 +192,6 @@ ul li::marker {
 
 .col-sm-2 {
     flex-basis: 50%;
-    /* min-width: 50%; */
 }
 
 .col-3 {
@@ -255,6 +252,10 @@ ul li::marker {
 
 .p-4 {
     padding: calc(var(--spacing) * 4);
+}
+
+.pt-4 {
+    padding-top: calc(var(--spacing) * 4);
 }
 
 .flex-end {
@@ -361,11 +362,24 @@ ul li::marker {
 .icon-small {
     width: 1.5rem;
     height: 1.5rem;
+    flex-shrink: 0;
 }
 
 .icon-large {
     width: 2rem;
     height: 2rem;
+}
+
+.number-round {
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 1rem;
+    border-radius: 50%;
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
 }
 
 .icon-large-round {
@@ -374,7 +388,6 @@ ul li::marker {
     width: 4rem;
     height: 4rem;
     padding: 1rem;
-    /* margin: 0 auto; */
 }
 
 .technology {
@@ -415,7 +428,7 @@ ul li::marker {
 }
 
 /* Breakpoints */
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 56rem) {
     .col-2 {
         flex-basis: 100%;
     }
@@ -433,7 +446,7 @@ ul li::marker {
     }
 }
 
-@media only screen and (max-width: 700px) {    
+@media only screen and (max-width: 44rem) {    
     nav>.links {
         display: none;
     }
@@ -443,7 +456,7 @@ ul li::marker {
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 37rem) {
     .col-3 {
         flex-basis: 100%;
     }
@@ -456,7 +469,3 @@ ul li::marker {
         display: none;
     }
 }
-
-/*
-var(--tw-gradient-via-stops, to bottom right in oklab, oklch(.977 .014 308.299) 0%, oklch(.946 .033 307.174) 100%)
-*/
