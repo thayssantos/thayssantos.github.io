@@ -18,6 +18,7 @@
     --color-red: #fb2c36;
     --color-purple: #2d165c;
     --color-purple2: #3b295f;
+    --color-purple-hover: #5529ae;
     --border-radius: 0.5rem;
     --spacing: 0.5rem;
 
@@ -146,10 +147,19 @@ video {
     display: inline-block;
 }
 
+.button:hover {
+    background-color: var(--color-purple-hover);
+}
+
 .button-outline {
     color: var(--color-primary);
     background-color: var(--color-white);
     border: 1px solid var(--color-primary);
+}
+
+.button-outline:hover{
+    background-color: var(--color-gray);
+    color: var(--color-purple-hover);
 }
 
 .container {
